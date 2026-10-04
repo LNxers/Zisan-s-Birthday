@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090611">
+  <title>Happy Birthday, Zisan ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="gift">
+    <section id="stage1" class="stage stage-active" aria-label="Birthday opening">
+      <canvas id="fireworksCanvas"></canvas>
+      <div class="opening-overlay">
+        <div class="opening-copy">
+          <p class="eyebrow">A little something made with code ❤️</p>
+          <h1>HAPPY<br><span>BIRTHDAY!</span></h1>
+          <p class="person-name">Tanzid Arnob Zisan</p>
+          <button id="continueBtn" class="primary-btn">Continue 🎁</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="stage2" class="stage" aria-label="Birthday music">
+      <canvas id="musicCanvas"></canvas>
+      <div id="musicClick">
+        <div class="music-icon">♪</div>
+        <strong>One little song...</strong>
+        <span>Click to start ❤️</span>
+      </div>
+      <div id="musicCard" class="glass-card">
+        <p class="eyebrow">For you, Zisan</p>
+        <h2>Happy Birthday, <span>Zisan!</span></h2>
+        <div id="wishes">
+          <p id="p1"></p>
+          <p id="p2"></p>
+          <p id="p3"></p>
+          <p id="p4"></p>
+        </div>
+        <p class="music-hint">Listen until the last note 🎵</p>
+      </div>
+    </section>
+
+    <section id="stage3" class="stage" aria-label="Birthday cake">
+      <div class="cake-stars"></div>
+      <div class="cake-scene">
+        <div class="cake-text">
+          <p class="eyebrow">And finally...</p>
+          <h2>Happy Birthday!</h2>
+          <p>Tanzid Arnob Zisan</p>
+        </div>
+
+        <div class="cake-wrap">
+          <div class="cake">
+            <div class="candle"><div class="flame"></div></div>
+            <div class="cake-top"><div class="cream"></div></div>
+            <div class="cake-body"><span></span><span></span><span></span></div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+
+        <button id="wishBtn" class="primary-btn wish-btn">Make a Wish ✨</button>
+
+        <div id="finalMessage" class="final-message" aria-hidden="true">
+          <div class="heart">♥</div>
+          <h3>May your Next Year be beautiful.</h3>
+          <p>May there be more smiles, more peaceful moments, and many reasons to be grateful. ❤️</p>
+          <small>— A birthday gift made with code</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="transition" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
